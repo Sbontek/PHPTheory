@@ -7,7 +7,7 @@
 DONE Pas de Standard Tag en Echo Tag toe
 DONE Experimenteer met de deprecated Short Tag, Script Tag en ASP Tags
 DONE Pas de 2 varianten van Single line comments, en de Multi-line comment toe
- Experimenteer met de 4 scalar data-types en toon aan met de gettype-functie welke data-type je gebruikt hebt
+DONE Experimenteer met de 4 scalar data-types en toon aan met de gettype-functie welke data-type je gebruikt hebt
  Experimenteer met type-casting voor elke data-type
  Experimenteer met type-casting van array naar een object
 DONE Experimenteer met variable variablen
@@ -15,10 +15,10 @@ DONE Pas CONSTANTS toe in een PHP-script
 DONE Experimenteer met var_dump, print_ren debug_zval_dump
  Pas de isset() en empty() functies toe
  Experimenteer met de veelgebruikte operators: Assignment Operators, de 6 
- Arithmetic Operators, String Operators, Comparison Operators (4 Equivalence 
- Operators en 2 Inequality Operators) en Logical Operators
+	Arithmetic Operators, String Operators, Comparison Operators (4 Equivalence 
+	Operators en 2 Inequality Operators) en Logical Operators
  Experimenteer met Bitwise Operators, Error Control Operators, Execution Operators, 
- Incrementing/Decrementing Operators en Type Operators
+	Incrementing/Decrementing Operators en Type Operators
  Experimenteer met if-elseif-else statements, en nested if-else statements
  Experimenteer met de ternaryoperator en laat in een comment een vergelijkbare if/else statement zien
  Experimenteer met een if/else-statement i.c.m. de isset() en empty() functies
