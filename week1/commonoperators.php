@@ -31,12 +31,31 @@ echo '<pre>';
     $int10 = 10;
     $int5 = 5;
     
- 
+    var_dump( $string10 == $int10 );
+    var_dump( $string10 === $int10 );
+    var_dump( $string10 != $int10 );
+    var_dump( $string10 !== $int10 );
+    var_dump( $int10 < $int5 );
+    var_dump( $int10 > $int5 );
  
  // logical operators
  
+    $varT = true;
+    $varT2 = true;
+    $varF = false;
 
-
+if (($varT && $varT2) == true)
+{
+    echo 'AND operator found both conditions to be true'.PHP_EOL;
+}
+if (($varT || $varT2) == true)
+{
+    echo 'OR operator found one or both conditions to be true'.PHP_EOL;
+}
+if (($varT XOR $varF) == true)
+{
+    echo 'XOR operator found only one condition to be true'.PHP_EOL;
+}
 
 
 
