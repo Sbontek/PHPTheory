@@ -1,8 +1,8 @@
 <html>
 <?php
 echo '<pre>';
-
-
+ // experiment with if else combined with isset and empty functions
+ // isset and empty functions
 $varA = 0;
 var_dump($varA);
 

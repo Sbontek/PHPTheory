@@ -1,7 +1,7 @@
 <html>
 <?php
 echo '<pre>';
-
+ // type casting each data type integer float boolean string array object resource null value
 // cast to boolean
 
 $varA = 12;

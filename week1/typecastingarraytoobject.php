@@ -2,6 +2,7 @@
 <?php
 echo '<pre>';
 
+ // type casting from array to object
 $ranAr = array('number zero','number one','number two');
 
 
