@@ -23,7 +23,7 @@ DONE Experimenteer met if-elseif-else statements, en nested if-else statements
 DONE Experimenteer met de ternaryoperator en laat in een comment een vergelijkbare if/else statement zien
 DONE Experimenteer met een if/else-statement i.c.m. de isset() en empty() functies
 DONE Experimenteer met switch-case statement (incl default)
- Experimenteer met while, do/while, for, for each en pas ook break en continuetoe
+DONE Experimenteer met while, do/while, for, for each en pas ook break en continuetoe
  Pas in 2 verschillende bestanden de 2 manieren voor namespaces toe
  Pas in 1 bestand 2 verschillende namespaces toe
  Pas de namespaces toe in een bestand

@@ -28,6 +28,35 @@ for ( $int2 = 10; $int2 <= 100; $int2 += 10) {
 
 // for each
 
+$exampleArray = array("never", "gonna", "give", "you", "up");
+
+
+foreach($exampleArray as $entry)
+{
+    echo $entry." ";
+}
+
+// break and continue
+
+for($int3 = 0; $int3 < 20; $int3++)
+{
+    if($int3 == 15)
+    {
+        echo "achieved 15 and continued with printing increasing values".PHP_EOL;
+        continue;
+    }
+    echo $int3.PHP_EOL;
+}
+
+for($int3 = 0; $int3 < 20; $int3++)
+{
+    if($int3 == 15)
+    {
+         echo "achieved 15 and stopped".PHP_EOL;
+         break;
+    }
+    echo $int3.PHP_EOL;
+}
 
 
 
