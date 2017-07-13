@@ -9,9 +9,9 @@ DONE Experimenteer met string met variables met zowel single en double quotes
 
 DONE Pas naast \n nog meer control characters toe
 
-Pas Heredoc en Nowdoc toe in een bestand
+DONE Pas Heredoc en Nowdoc toe in een bestand
 
-Pas escaping toe in meerdere strings
+DONE Pas escaping toe in meerdere strings
 
 Pas de volgende functies toe: strlen, strtr en beschrijf in comment wat er gebeurd
 
