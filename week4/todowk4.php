@@ -36,16 +36,16 @@ DONE Haal alle keys op van een array met behulp van de array_keys functie
 
 DONE Haal alle waarden op van een array met behulp van de array_values functie
 
-Sorteer een array met behulp van de sort-functie en pas de 4 verschillende 
+DONE Sorteer een array met behulp van de sort-functie en pas de 4 verschillende 
     methodes toe: SORT_LOCALE_STRING, SORT_NUMERIC, SORT_REGULAR, SORT_STRING en 
     beschrijf in commentaar wat het verschil is. 
 
-Sorteer een array met behulp van de overige functies: rsort, asort, arsort, ksort, krsort, usort, natsort
+DONE Sorteer een array met behulp van de overige functies: rsort, asort, arsort, ksort, krsort, usort, natsort
     en beschrijf in commentaar wat het verschil is. 
 
-Voeg 2 arrays samen met de array_merge functie
+DONE Voeg 2 arrays samen met de array_merge functie
 
-Vergelijk 2 arrays met de array_diff functie 
+DONE Vergelijk 2 arrays met de array_diff functie 
 
 Vergelijk dezelfde 2 arrays met de array_diff_assoc, array_diff_key, array_diff_uasocc()
     en array_diff_ukey-functies en beschrijf het verschil onderling in commentaar. 
