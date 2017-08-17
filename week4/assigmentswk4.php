@@ -16,10 +16,26 @@ $carbs = array('cookies','bread','pasta','rice','potatoes');
 // multidimensional array
 $people = array
   (
-  array("Janice",72,3),
-  array("Eunice",49,1),
-  array("Maureen",52,2),
-  array("Euginia",84,1)
+  array(
+        'name' => "Janice",
+        'age' => 72,
+        'miles per minute' => 3,
+        ),
+  array(
+        'name' => "Eunice",
+        'age' => 49,
+        'miles per minute' => 1,
+        ),
+  array(
+        'name' => "Maureen",
+        'age' => 52,
+        'miles per minute' => 2,
+        ),
+  array(
+        'name' => "Euginia",
+        'age' => 84,
+        'miles per minute' => 1,
+        )
   );
   
 // use var_dump on the above arrays
@@ -177,15 +193,68 @@ echo 'array_diff'.PHP_EOL;
 print_r(array_diff($carbs,$meats));
 
 // compare same two arrays with array_diff_assoc, array_diff_key, array_diff_uasocc() array_diff_ukey functions
+$numbah1 = array('1','2','4','6');
+$numbah2 = array('1','2','3','4');
 // array_diff_assoc
+$diff1=array_diff_assoc($numbah1,$numbah2);
+echo "Array_diff_assoc".PHP_EOL;
+print_r($diff1);
 
 // array_diff_key
+$diff2=array_diff_key($numbah1,$numbah2);
+echo "Array_diff_key".PHP_EOL;
+print_r($diff2);
 
 // array_diff_uasocc
+function uAsocc($a,$b)
+{
+if ($a===$b)
+  {
+  return 0;
+  }
+  return ($a>$b)?1:-1;
+}
+
+
+$diff3=array_diff_uassoc($numbah1,$numbah2,"uAsocc");
+echo "Array_diff_uassoc".PHP_EOL;
+print_r($diff3);
 
 // array_diff_ukey
+function uKey($a,$b)
+{
+if ($a===$b)
+  {
+  return 0;
+  }
+  return ($a>$b)?1:-1;
+}
+
+
+$diff4=array_diff_ukey($numbah1,$numbah2,"uKey");
+echo "Array_diff_ukey".PHP_EOL;
+print_r($diff4);
 
 // use the ArrayObject class specifically append, asort, natsort methods
+$ranArr = array("6","8","1","2","16");
+
+$arrObj1 = new ArrayObject($ranArr);
+echo "baseline arrayObject".PHP_EOL;
+print_r($arrObj1);
+$arrObj2 = clone $arrObj1;
+
+echo "arrayObject append".PHP_EOL;
+$arrObj1->append('32');
+print_r($arrObj1);
+$arrObj2 = clone $arrObj1;
+
+$arrObj1->asort();
+echo "arrayObject asort".PHP_EOL;
+print_r($arrObj1);
+
+$arrObj2->natsort();
+echo "arrayObject natsort".PHP_EOL;
+print_r($arrObj2);
 
 // in case not used use these functions
 // array_change_key_case, array_chunk, array_column, array_count_values, 
@@ -193,7 +262,84 @@ print_r(array_diff($carbs,$meats));
 //array_fill, array_filter, array_flip, array_intersect_assoc, array_intersect_key, 
 //array_intersect_uassoc, array_intersect_ukey, array_intersect, array_key_exists,
 
+// array_change_key_case
+echo "array utensils with array_change_key_case".PHP_EOL;
+print_r(array_change_key_case($utensils,CASE_UPPER));
 
+// array_chunk
+echo "array meats with array_chunks".PHP_EOL;
+print_r(array_chunk($meats,2));
+
+// array_column 
+echo "array people with array_column to show ages".PHP_EOL;
+$arrAges = array_column($people, 'age');
+print_r($arrAges);
+
+// array_count_values
+$numbah3 = array(1,2,4,4,2,6,8,1,8,8,8);
+echo "baseline array numbah3".PHP_EOL;
+print_r($numbah3);
+echo "array_count_values".PHP_EOL;
+print_r(array_count_values($numbah3));
+
+// array_fill 
+$numbah4 = array(1,5,7,2,5);
+echo "baseline array numbah4".PHP_EOL;
+print_r($numbah4);
+echo "array_fill".PHP_EOL;
+$numbah4=array_fill(5,1,42);
+print_r($numbah4);
+
+// array_filter 
+function filterTryEven($var)
+{
+return(!($var & 1));
+}
+echo "array numbah3 with array_filter (even)".PHP_EOL;
+print_r(array_filter($numbah3,"filterTryEven"));
+
+// array_flip 
+echo "baseline array utensils".PHP_EOL;
+print_r($utensils);
+$flippy=array_flip($utensils);
+echo "utensils with keys and values switched around, array_flip".PHP_EOL;
+print_r($flippy);
+
+// array_intersect_assoc 
+echo "array_intersect_assoc (arrays numbah1 and numbah2".PHP_EOL;
+$interSectA=array_intersect_assoc($numbah1,$numbah2);
+print_r($interSectA);
+
+// array_intersect_key
+echo "array_intersect_key".PHP_EOL;
+$interSectK=array_intersect_key($numbah1,$numbah2);
+print_r($interSectK);
+
+// array_intersect_uassoc 
+echo "array_intersect_uassoc".PHP_EOL;
+$interSectUA=array_intersect_uassoc($numbah1,$numbah2,"filterTryEven");
+print_r($interSectUA);
+
+// array_intersect_ukey 
+echo "array_intersect_ukey".PHP_EOL;
+$interSectUK=array_intersect_ukey($numbah1,$numbah2,"filterTryEven");
+print_r($interSectUK);
+
+// array_intersect 
+echo "array_intersect".PHP_EOL;
+$interSect=array_intersect($numbah1,$numbah2);
+print_r($interSect);
+
+// array_key_exists 
+echo "array_key_exists".PHP_EOL;
+if (array_key_exists("fork",$utensils))
+  {
+  echo "Key fork exists!";
+  }
+else
+  {
+  echo "Key fork does not exist!";
+  }
 
 
 

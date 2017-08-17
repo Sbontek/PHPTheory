@@ -47,16 +47,15 @@ DONE Voeg 2 arrays samen met de array_merge functie
 
 DONE Vergelijk 2 arrays met de array_diff functie 
 
-Vergelijk dezelfde 2 arrays met de array_diff_assoc, array_diff_key, array_diff_uasocc()
+DONE Vergelijk dezelfde 2 arrays met de array_diff_assoc, array_diff_key, array_diff_uasocc()
     en array_diff_ukey-functies en beschrijf het verschil onderling in commentaar. 
 
-Pas de ArrayObject-class toe, met name de append, asort, natsort methodes 
+DONE Pas de ArrayObject-class toe, met name de append, asort, natsort methodes 
 
 Controleer of je alle onderstaande Array-functies (uit Appendix A: Array Functions) 
     hebt toegepast. Experimenteer met de functies die je nog niet hebt toegepast.  
 
 array_change_key_case, array_chunk, array_column, array_count_values, 
-array_diff_assoc, array_diff_key, array_diff_uassoc, array_diff_ukey, array_diff, 
 array_fill, array_filter, array_flip, array_intersect_assoc, array_intersect_key, 
 array_intersect_uassoc, array_intersect_ukey, array_intersect, array_key_exists, 
 
