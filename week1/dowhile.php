@@ -4,7 +4,7 @@ echo '<pre>';
 
 
 
-// Experimenteer met while, do/while, for, for each en pas ook break en continuetoe
+// Experimenteer met while, do/while, for, for each en pas ook break en continue toe
 
 $int = 1;
 

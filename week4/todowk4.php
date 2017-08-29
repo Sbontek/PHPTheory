@@ -52,12 +52,12 @@ DONE Vergelijk dezelfde 2 arrays met de array_diff_assoc, array_diff_key, array_
 
 DONE Pas de ArrayObject-class toe, met name de append, asort, natsort methodes 
 
-Controleer of je alle onderstaande Array-functies (uit Appendix A: Array Functions) 
+DONE Controleer of je alle onderstaande Array-functies (uit Appendix A: Array Functions) 
     hebt toegepast. Experimenteer met de functies die je nog niet hebt toegepast.  
 
-array_change_key_case, array_chunk, array_column, array_count_values, 
-array_fill, array_filter, array_flip, array_intersect_assoc, array_intersect_key, 
-array_intersect_uassoc, array_intersect_ukey, array_intersect, array_key_exists, 
+    array_change_key_case, array_chunk, array_column, array_count_values, 
+    array_fill, array_filter, array_flip, array_intersect_assoc, array_intersect_key, 
+    array_intersect_uassoc, array_intersect_ukey, array_intersect, array_key_exists, 
 
 
 

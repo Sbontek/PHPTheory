@@ -3,14 +3,15 @@
 /*
 
 
-Pas de header functie toe zoals in de voorbeelden van 
+DONE Pas de header functie toe zoals in de voorbeelden van 
     https://www.w3schools.com/php/func_http_header.asp
 
-Experimenteer met sessies; de session_start, session_destroy, session_id-functies 
+DONE Experimenteer met sessies; de session_start, session_destroy, session_id-functies 
     en de $_SESSION variable
 
-Experimenteer met cookies; setcookie-& setrawcookie-functies. Roep de waarden 
-    uit het cookie aan via de $_COOKIE en $_REQUEST variabelen 
+DONE Experimenteer met cookies; setcookie-& setrawcookie-functies. Roep de waarden 
+    uit het cookie aan via de $_COOKIE en $_REQUEST variabelen   
+(still need to figure out $_REQUEST)
 
 Pas bij sessies of cookiees ook de serialize & unserialize-functies toe
 
