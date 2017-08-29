@@ -25,9 +25,9 @@ echo "Cookies is ".$_SESSION["cookies"].PHP_EOL;
 
 // session_destroy 
 // unset the variables first
-session_unset();
+// session_unset(); // remove two slashes at start to use
 // removes session
-session_destroy();
+// session_destroy(); // remove two slashes at start to use
 
 
 
@@ -49,9 +49,15 @@ if(!isset($_COOKIE[$cookie_name]))
 // with either sessions or cookies use serialize and unserialize
 
 // html form which uses post to send to php script
+?>
+<form action="/action_page.php" method="post">
 
+<?php
 // html form which uses get to send to php script
+?>
+<form action="/action_page.php" method="get">
 
+<?php
 // html form with two text input areas named with arrays i.e. <input name="FormArray[]"> read the values with a php script
 
 // check with an html form if you can read data from the $_REQUEST variable
